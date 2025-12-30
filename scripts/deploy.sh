@@ -2,7 +2,7 @@
 set -eu
 
 ROOT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
-BRANCH=${BRANCH:-main}
+BRANCH=prod
 PM2_NAME=${PM2_NAME:-kolotun}
 
 cd "$ROOT_DIR"
