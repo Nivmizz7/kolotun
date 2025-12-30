@@ -12,8 +12,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Export diagram (Draw.io -> SVG)
-        run: ./scripts/export.sh
+      - name: Deploy to prod
+        run: ./scripts/deploy.sh
 
       - name: Load SSH key
         uses: webfactory/ssh-agent@v0.9.0
