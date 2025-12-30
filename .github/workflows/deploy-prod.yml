@@ -8,12 +8,10 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Deploy to prod
-        run: ./scripts/deploy.sh
 
       - name: Load SSH key
         uses: webfactory/ssh-agent@v0.9.0
@@ -24,7 +22,7 @@ jobs:
         run: |
           HOST="${{ secrets.DEPLOY_HOST }}"
           PORT="${{ secrets.DEPLOY_PORT }}"
-          if [ -z "$PORT" ]; then PORT=22; fi
+          [ -z "$PORT" ] && PORT=22
           mkdir -p ~/.ssh
           ssh-keyscan -p "$PORT" -H "$HOST" >> ~/.ssh/known_hosts
 
@@ -34,6 +32,19 @@ jobs:
           USER="${{ secrets.DEPLOY_USER }}"
           PATH_ON_SERVER="${{ secrets.DEPLOY_PATH }}"
           PORT="${{ secrets.DEPLOY_PORT }}"
-          if [ -z "$PORT" ]; then PORT=22; fi
+          [ -z "$PORT" ] && PORT=22
+
           ssh -p "$PORT" "$USER@$HOST" "mkdir -p $PATH_ON_SERVER"
-          rsync -az --delete -e "ssh -p $PORT" public/ server/ package.json "$USER@$HOST:$PATH_ON_SERVER/"
+          rsync -az --delete \
+            -e "ssh -p $PORT" \
+            ./ "$USER@$HOST:$PATH_ON_SERVER/"
+
+      - name: Run deploy script on server
+        run: |
+          HOST="${{ secrets.DEPLOY_HOST }}"
+          USER="${{ secrets.DEPLOY_USER }}"
+          PORT="${{ secrets.DEPLOY_PORT }}"
+          PATH_ON_SERVER="${{ secrets.DEPLOY_PATH }}"
+          [ -z "$PORT" ] && PORT=22
+
+          ssh -p "$PORT" "$USER@$HOST" "cd $PATH_ON_SERVER && bash scripts/deploy.sh"
