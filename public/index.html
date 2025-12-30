@@ -3,97 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kolotun Diagramme</title>
+    <title>Kolotun - Nivmizz7</title>
     <style>
-      :root {
-        --paper: #f8f5ef;
-        --frame: #ffffff;
-        --ink: #1c1f26;
-        --accent: #0f766e;
-        --shadow: rgba(15, 23, 42, 0.15);
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
       html,
       body {
         height: 100%;
+        margin: 0;
       }
 
       body {
-        margin: 0;
-        color: var(--ink);
-        background:
-          radial-gradient(1400px 900px at 15% 10%, #e3efe8 0%, transparent 70%),
-          radial-gradient(1200px 800px at 85% 20%, #fbead8 0%, transparent 68%),
-          linear-gradient(160deg, #f5efe6 0%, #e6e1d7 70%, #f5efe6 100%);
-        display: grid;
-        place-items: center;
-        font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, "Times New Roman", serif;
-      }
-
-      .frame {
-        width: min(1200px, 94vw);
-        height: min(900px, 92vh);
-        background: var(--frame);
-        border-radius: 28px;
-        border: 1px solid rgba(15, 23, 42, 0.08);
-        box-shadow: 0 35px 90px var(--shadow);
-        padding: clamp(16px, 2vw, 28px);
-        display: grid;
-        grid-template-rows: auto 1fr;
-        gap: 12px;
-      }
-
-      header {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        gap: 16px;
-      }
-
-      h1 {
-        font-size: clamp(18px, 2.2vw, 28px);
-        margin: 0;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-      }
-
-      .status {
-        font-size: 0.9rem;
-        color: rgba(28, 31, 38, 0.6);
-      }
-
-      .canvas {
-        border-radius: 20px;
-        background:
-          linear-gradient(135deg, rgba(15, 118, 110, 0.08), transparent 60%),
-          linear-gradient(0deg, rgba(15, 118, 110, 0.05), rgba(15, 118, 110, 0.05));
-        border: 1px solid rgba(15, 23, 42, 0.06);
-        display: grid;
-        place-items: center;
-        overflow: hidden;
+        background: #ffffff;
       }
 
       img {
-        width: 100%;
-        height: 100%;
+        display: block;
+        width: 100vw;
+        height: 100vh;
         object-fit: contain;
       }
     </style>
   </head>
   <body>
-    <section class="frame">
-      <header>
-        <h1>Kolotun</h1>
-        <div class="status">Diagramme en direct</div>
-      </header>
-      <div class="canvas">
-        <img id="diagram" src="latest.svg" alt="Diagramme Kolotun" />
-      </div>
-    </section>
+    <img id="diagram" src="latest.svg" alt="Diagramme Kolotun" />
     <script>
       const img = document.getElementById("diagram");
       const refreshMs = 60000;
