@@ -2,7 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 
-const port = Number(process.env.PORT) || 3000;
+const port = Number(process.env.PORT) || 3598;
 const publicDir = process.env.PUBLIC_DIR
   ? path.resolve(process.env.PUBLIC_DIR)
   : path.join(__dirname, "..", "public");
