@@ -1,0 +1,39 @@
+name: Deploy prod
+
+on:
+  push:
+    branches:
+      - prod
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Export diagram (Draw.io -> SVG)
+        run: ./scripts/export.sh
+
+      - name: Load SSH key
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Register server in known_hosts
+        run: |
+          HOST="${{ secrets.DEPLOY_HOST }}"
+          PORT="${{ secrets.DEPLOY_PORT }}"
+          if [ -z "$PORT" ]; then PORT=22; fi
+          mkdir -p ~/.ssh
+          ssh-keyscan -p "$PORT" -H "$HOST" >> ~/.ssh/known_hosts
+
+      - name: Sync files to server
+        run: |
+          HOST="${{ secrets.DEPLOY_HOST }}"
+          USER="${{ secrets.DEPLOY_USER }}"
+          PATH_ON_SERVER="${{ secrets.DEPLOY_PATH }}"
+          PORT="${{ secrets.DEPLOY_PORT }}"
+          if [ -z "$PORT" ]; then PORT=22; fi
+          ssh -p "$PORT" "$USER@$HOST" "mkdir -p $PATH_ON_SERVER"
+          rsync -az --delete -e "ssh -p $PORT" public/ server/ package.json "$USER@$HOST:$PATH_ON_SERVER/"
