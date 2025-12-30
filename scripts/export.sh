@@ -10,6 +10,7 @@ docker run --rm \
   --user "$(id -u)":"$(id -g)" \
   -v "$ROOT_DIR":/data \
   "$IMAGE" \
+  drawio \
   --export \
   --format svg \
   --output /data/public/latest.svg \
