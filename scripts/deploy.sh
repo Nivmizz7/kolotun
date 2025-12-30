@@ -19,10 +19,10 @@ else
   npm install
 fi
 
-if pm2 describe kolotun-prod >/dev/null 2>&1; then
-  pm2 restart kolotun-prod
+if npx pm2 describe kolotun-prod >/dev/null 2>&1; then
+  npx pm2 restart kolotun-prod
 else
-  pm2 start npm --name kolotun-prod -- start
+  npx pm2 start npm --name kolotun-prod -- start
 fi
 
-pm2 save
+npx pm2 save
