@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eu
 
-ROOT_DIR=/home/deploy/kolotun
+ROOT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 BRANCH=prod
 PM2_NAME=kolotun-prod
 
