@@ -1,9 +1,11 @@
 #!/bin/bash
 set -eu
 
-ROOT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+ROOT_DIR=/home/deploy/kolotun
 BRANCH=prod
 PM2_NAME=kolotun-prod
+
+whoami
 
 cd "$ROOT_DIR"
 
@@ -17,10 +19,10 @@ else
   npm install
 fi
 
-if pm2 describe "$PM2_NAME" >/dev/null 2>&1; then
-  pm2 restart "$PM2_NAME"
+if pm2 describe kolotun-prod >/dev/null 2>&1; then
+  pm2 restart kolotun-prod
 else
-  pm2 start npm --name "$PM2_NAME" -- start
+  pm2 start npm --name kolotun-prod -- start
 fi
 
 pm2 save
