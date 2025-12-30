@@ -3,7 +3,7 @@ set -eu
 
 ROOT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 IMAGE="${DRAWIO_IMAGE:-jgraph/drawio}"
-BIN="${DRAWIO_BIN:-/opt/drawio/drawio}"
+BIN="/opt/drawio/drawio"
 
 mkdir -p "$ROOT_DIR/public"
 
