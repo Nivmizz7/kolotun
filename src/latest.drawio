@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:146.0) Gecko/20100101 Firefox/146.0" version="29.2.9">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0" version="29.2.9">
   <diagram name="Page-1" id="eA2fZVIHKMvIUYei3RP4">
-    <mxGraphModel dx="2462" dy="2542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1618" dy="1982" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -64,6 +64,24 @@
         </mxCell>
         <mxCell id="iAhI6fgzh_vEYLo6vMLt-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="&lt;div align=&quot;center&quot;&gt;&lt;font style=&quot;font-size: 21px; color: light-dark(transparent, rgb(255, 0, 0));&quot;&gt;Skiing with Skier&lt;/font&gt;&lt;/div&gt;&lt;div&gt;Trader: Skier&lt;/div&gt;&lt;div&gt;Initial Equipement:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; 1x Kel-Tec RFB 7.62x51 rifle&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; 3x SA58/FAL 7.62x51 20-round magazine&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; 4x 7.62x51mm M80 ammo pack (20 pcs)&lt;br&gt;Objectives:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; Eliminate PMC operatives in Ushanka ear flap hats while wearing a Pompon hat&lt;br&gt;&amp;nbsp; &amp;nbsp; &lt;b&gt;&lt;u&gt;Note&lt;/u&gt;&lt;/b&gt;: The objective in the PvE mode is to eliminate any PMC operatives while&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; wearing a Pompon hat instead.&amp;nbsp;&lt;/div&gt;&lt;div&gt;Rewards:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; +15,000 EXP&lt;br&gt;&amp;nbsp; &amp;nbsp; Skier Rep +0.01&lt;/div&gt;" vertex="1">
           <mxGeometry height="215" width="450" x="1840" y="480.5" as="geometry" />
+        </mxCell>
+        <mxCell id="xthzmEgobkyP0lXN9iJk-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Data are from Escape from Tarkov Wiki (https://escapefromtarkov.com/wiki)&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="750" x="770" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="xthzmEgobkyP0lXN9iJk-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Made by Nivmizz7&lt;/b&gt; &lt;i&gt;(https://github.com/Nivmizz7/kolotun)&lt;/i&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="480" x="770" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="xthzmEgobkyP0lXN9iJk-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Latest update: 31/12/2025&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="260" x="1260" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="xthzmEgobkyP0lXN9iJk-11" edge="1" parent="1" source="xthzmEgobkyP0lXN9iJk-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="xthzmEgobkyP0lXN9iJk-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xthzmEgobkyP0lXN9iJk-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="&lt;div align=&quot;center&quot;&gt;&lt;font style=&quot;font-size: 21px; color: light-dark(transparent, rgb(255, 0, 0));&quot;&gt;A Small Celebration&lt;/font&gt;&lt;/div&gt;&lt;div&gt;Trader: Ragman&lt;/div&gt;&lt;div&gt;Initial Equipement:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; 1x RSP-30 reactive signal cartridge (Firework)&lt;br&gt;Objectives:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; Launch a firework in the appropriate spot (christmas tree)&lt;br&gt;&amp;nbsp; &amp;nbsp; East some Olivier salad (x1)&lt;br&gt;&amp;nbsp; &amp;nbsp; Drink some vodka (x1)&lt;/div&gt;&lt;div&gt;Rewards:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; +20,000 EXP&lt;br&gt;&amp;nbsp; &amp;nbsp; Ragman Rep +0.01&lt;br&gt;&amp;nbsp; &amp;nbsp; ??? Roubles&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ??? Roubles with Intelligence center Level 1&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 94 640 Roubles with Intelligence center Level 2&lt;br&gt;&amp;nbsp; &amp;nbsp; 2× Crye Precision AVS plate carrier (Ranger Green)&lt;br&gt;&amp;nbsp; &amp;nbsp; 1× Ballistic plate case&lt;br&gt;&amp;nbsp; &amp;nbsp; Unlocks achievement Whiteout&lt;/div&gt;" vertex="1">
+          <mxGeometry height="270" width="340" x="1530" y="-120" as="geometry" />
+        </mxCell>
+        <mxCell id="xthzmEgobkyP0lXN9iJk-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;font style=&quot;font-size: 23px;&quot;&gt;&lt;b&gt;End of the event&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 23px;&quot;&gt;&lt;b&gt;Got achivement: &quot;Whiteout&quot;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="240" x="1920" y="-45" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
